@@ -2,6 +2,7 @@ package com.example.security1.model;
 
 import lombok.Data;
 import lombok.Getter;
+import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
