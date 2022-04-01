@@ -1,0 +1,17 @@
+super.loadUser(userRequest).getAttributes() = {
+sub=109331528412880868550, 
+name=조은지, 
+given_name=은지, 
+family_name=조, 
+picture=https://lh3.googleusercontent.com/a/AATXAJyXtTktIJRRUiB1_75HocVwbceqc5y2z-b4uc9n=s96-c, 
+email=rira9817@gmail.com, 
+email_verified=true,
+locale=ko}
+
+
+username= "google_109331528412880868550"
+password="암호화(겟인데어)"
+email = "rira9817@gmail.com"
+role = "ROLE_USER"
+provider="google"
+providerId="109331528412880868550"

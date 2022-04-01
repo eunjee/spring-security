@@ -1,0 +1,25 @@
+스프링 시큐리티 사용시 api를 호출하면 View가 나오기 전에 로그인 화면이 나오게 된다.
+=> 콘솔에 나오는 비밀번호를 적기! 기본 아이디는 user
+
+SecurityConfig
+=> 스프링 시큐리티 필터가 스프링 필터 체인에 등록이 된다.
+
+
+9강
+스프링 시큐리티
+세션 내에
+시큐리티 세션이 존재 :Authentication 객체만 존재가능
+
+Authentication ->UserDetails 타입과 Oauth2User타입 존재 가능
+
+UserDetails ->일반 로그인
+OAuth2User -> 구글 로그인
+
+불편한 점:
+일반 api 컨트롤러에서는 UserDetails로 값을 받음
+그러나 구글로그인을 한 경우에는 Oauth2User타입으로 값을 받아야 한다. 
+=> 어떤 타입을 받아야 하는가?
+=> 정답: X Class라는 만들어서 UserDetails와 OAuth2User를 둘 다 implementation받으면 된다.
+=> PrincipalDetails 타입을 부모로 잡아서 넣으면 필요할 때 마다 
+
+ 
